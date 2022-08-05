@@ -1,19 +1,39 @@
 header {
     width: 100%;
     height: 80vh;
-    background-image: url(../gambar/header.jpg);
+    /* background-image: url(../gambar/header.jpg);
+    background-color: black;
     background-repeat: repeat;
-    background-size: cover;
+    background-size: cover; */
+    padding: 30px 10px 0;
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 15%, rgb(2, 0, 106) 50%, rgba(0,0,0,1) 75%, rgba(0,0,0,1) 100%);
     background-attachment: fixed;
+}
+header .sosial-media {
+    width: 350px;
+}
+header .sosial-media ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+header .sosial-media ul li {
+    list-style: none;
+}
+header .sosial-media a {
+    font-size: 45px;
+    text-decoration: none;
+    color: white;
 }
 .ml13 {
     font-size: 1.9em;
     font-style: italic;
-    letter-spacing: 0.1em;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
     font-weight: 600;
-    font-size: 30px;
-    width: 400px;
-    background-color: red;
+    color: white;
+    padding: 0 50px;
+    font-size: 80px;
 }
 .ml13 .letter {
     display: inline-block;
