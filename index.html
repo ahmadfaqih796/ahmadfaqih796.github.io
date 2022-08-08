@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/root.css">
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/navigasi.css">
+    <link rel="stylesheet" href="assets/css/konten.css">
     <script src="https://kit.fontawesome.com/8484f65b47.js" crossorigin="anonymous"></script>
     <script src="assets/js/jquery-3.6.0.js"></script>
     <script src="assets/js/anime.min.js"></script>
@@ -16,7 +17,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="home">
         <div class="sosial-media">
             <ul>
                 <li><a href=""><i class="fa-brands fa-github"></i></a></li>
@@ -34,20 +35,65 @@
     </header>
     <nav>
         <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Profil</a></li>
-            <li><a href="">Resume</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#profil">Profil</a></li>
+            <li><a href="#resume">Resume</a></li>
         </ul>
         <img src="assets/gambar/faqih.jpg" alt="">
+        <div class="nama">
+            <p>Faqih</p>
+            <p>Web Developer</p>
+        </div>
         <ul>
             <li><a href="">Skill</a></li>
             <li><a href="">Pendidikan</a></li>
             <li><a href="">Sertifikat</a></li>
         </ul>
     </nav>
+    <section id="profil">
+        <article>
+            <legend>Profil</legend>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, ipsa delectus corrupti ducimus maiores aut tenetur sit expedita eum velit autem ipsum facilis! Sit, impedit. Illum repellendus facilis ipsa aut.</p>
+        </article>
+        <article>
+            <legend>Profil</legend>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, ipsa delectus corrupti ducimus maiores aut tenetur sit expedita eum velit autem ipsum facilis! Sit, impedit. Illum repellendus facilis ipsa aut.</p>
+        </article>
+        <article>
+            <legend>Profil</legend>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, ipsa delectus corrupti ducimus maiores aut tenetur sit expedita eum velit autem ipsum facilis! Sit, impedit. Illum repellendus facilis ipsa aut.</p>
+        </article>
+    </section>
+    <div class="profil" id="profil" style="background-color: blue; height: 500px;">
 
+    </div>
+    <div class="resume" id="resume" style="background-color: red; height: 500px;" onclick="">
 
+    </div>
+    <script src="assets/js/navigasi.js"></script>
     <script src="assets/js/teks-animasi.js"></script>
+    <!-- SMOOTH SCROLL -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+    $(function() {
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 700);
+            return false;
+          }
+        }
+      });
+    });
+    </script>
+    <!-- End of SMOOTH SCROLL -->
 </body>
 
 </html>
