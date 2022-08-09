@@ -75,25 +75,7 @@
     </div>
     <script src="assets/js/navigasi.js"></script>
     <script src="assets/js/teks-animasi.js"></script>
-    <!-- SMOOTH SCROLL -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script>
-    $(function() {
-      $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top
-            }, 700);
-            return false;
-          }
-        }
-      });
-    });
-    </script>
-    <!-- End of SMOOTH SCROLL -->
 </body>
 
 </html>
