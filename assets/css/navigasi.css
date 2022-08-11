@@ -49,8 +49,8 @@ nav .nama {
     text-align: center;
     top: 50%;
     font-size: 0;
-    transition: all 1s;
-    animation: fade-out 1s;
+    transition: all 0.4s;
+    animation: fade-out 0.4s;
     transform: translateY(-50%);
 }
 @keyframes fade-in {
@@ -72,7 +72,7 @@ nav .nama {
     100% {
         font-size: 0;
         width: 0;
-        margin: -100px 0 0 0;
+        margin: -200px 0 0 0;
     }
 }
 
@@ -86,7 +86,7 @@ nav .nama {
     animation: fade-out 1s both;
 }
 .sticky .nama {
-    transition: all 1s;
+    transition: all 0.5s;
     animation: fade-in 1s both;
     display: block;
 }
