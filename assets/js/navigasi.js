@@ -1,6 +1,6 @@
 window.addEventListener("scroll", function () {
     var nav = document.querySelector("nav");
-    nav.classList.toggle("sticky", window.scrollY > 500);
+    nav.classList.toggle("sticky", window.scrollY > 300);
 });
 var $li = $('nav ul li a').click(function () {
     $li.removeClass('selected');

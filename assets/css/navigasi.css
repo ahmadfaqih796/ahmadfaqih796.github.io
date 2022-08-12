@@ -5,7 +5,7 @@
 nav {
     width: 100%;
     height: 50px;
-    background-color: black;
+    background-color: green;
     display: flex;
     position: relative;
     justify-content: space-around;
@@ -14,7 +14,7 @@ nav {
 nav ul {
     display: flex;
     width: 400px;
-    background-color: black;
+    background-color: green;
     height: 50px;
     justify-content: space-around;
 }
@@ -27,7 +27,7 @@ nav ul li {
     letter-spacing: 1px;
 }
 nav ul li a.selected {
-    color: green;
+    color: greenyellow;
 }
 nav ul li a {
     color: white;
@@ -36,7 +36,7 @@ nav ul li a {
 nav img {
     width: 175px;
     height: 175px;
-    border: 20px solid black;
+    border: 20px solid green;
     border-radius: 50%;
     margin: -60px 0 0 0;
     transition: all 1s;

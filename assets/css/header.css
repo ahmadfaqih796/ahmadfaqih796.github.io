@@ -1,13 +1,13 @@
 header {
     width: 100%;
-    height: 500px;
-    /* background-image: url(../gambar/header.jpg);
+    height: 300px;
+    background-image: url(../gambar/header.jpg);
     background-color: black;
     background-repeat: repeat;
-    background-size: cover;
-    background-attachment: fixed; */
-    padding: 30px 10px 0;
-    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 10%, rgb(2, 0, 106) 50%, rgba(0,0,0,1) 90%, rgba(0,0,0,1) 100%);
+    background-size: 100% 300px;
+    background-attachment: fixed;
+    padding: 10px 10px 0;
+    /* background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 10%, rgb(2, 0, 106) 50%, rgba(0,0,0,1) 90%, rgba(0,0,0,1) 100%); */
 }
 header .sosial-media {
     width: 350px;
@@ -23,7 +23,7 @@ header .sosial-media ul li {
 header .sosial-media a {
     font-size: 45px;
     text-decoration: none;
-    color: white;
+    color: black;
 }
 .ml13 {
     font-size: 1.9em;
