@@ -26,3 +26,11 @@ section article hr {
     border: 2px solid green;
     background-color: green;
 }
+section article p {
+    text-align: justify;
+}
+section article table tr td{
+    vertical-align: top;
+    text-align: justify;
+    padding: 5px 0;
+}
