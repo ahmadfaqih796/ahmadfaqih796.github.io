@@ -26,11 +26,31 @@ section article hr {
     border: 2px solid green;
     background-color: green;
 }
+section article h2 i {
+    width: 40px;
+    text-align: center;
+    color: green;
+    margin: 5px 0;
+}
 section article p {
     text-align: justify;
 }
 section article table tr td{
     vertical-align: top;
     text-align: justify;
-    padding: 5px 0;
+    padding: 2px 0;
+}
+section article .bar {
+    width: 95%;
+    height: 20px;
+    border: 2px solid black;
+    margin: 5px auto;
+}
+section article .bar #web {
+    width: 70%;
+    height: 17px;
+    background-color: red;
+}
+section article .bar span {
+    
 }
