@@ -16,7 +16,7 @@ section article {
 }
 section article legend {
     text-align: center;
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: 600;
 }
 section article hr {
@@ -34,23 +34,28 @@ section article h2 i {
 }
 section article p {
     text-align: justify;
+    font-size: 1rem;
 }
 section article table tr td{
     vertical-align: top;
     text-align: justify;
     padding: 2px 0;
+    font-size: 1rem;
 }
 section article .bar {
     width: 95%;
     height: 20px;
-    border: 2px solid black;
+    border: 1px solid black;
     margin: 5px auto;
 }
 section article .bar #web {
     width: 70%;
-    height: 17px;
+    height: 18.5px;
     background-color: red;
 }
-section article .bar span {
-    
+section article .bar p {
+    margin: -18.5px 0 0 10px;
+    font-size: 1rem;
+    color: white;
+    font-weight: 700;
 }
