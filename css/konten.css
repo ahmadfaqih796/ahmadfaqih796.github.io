@@ -1,0 +1,109 @@
+h1, h2, img, p, .card, form{
+  transform: scale(0);
+  transition: all 1s;
+}
+[data-scroll="in"]{
+  transform: scale(1);
+}
+.about {
+  margin: -1rem 0 0 0;
+}
+.about h2,
+.projek h2,
+.kontak h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0 0 1rem 0;
+  padding: 3rem 0 0 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.about .text {
+  display: flex;
+  width: 100%;
+  font-size: 1.2rem;
+  justify-content: center;
+}
+.about .text p {
+  width: 300px;
+  text-align: justify;
+  margin: 2rem;
+}
+.about svg,
+.projek svg,
+.kontak svg {
+  margin: -2rem 0 -1rem 0;
+}
+@media screen and (max-width: 550px) { 
+  .about .text{
+    flex-wrap: wrap;
+  }
+  .about .text p {
+    width: 90%;
+    margin: 0.5rem 0 0 0;
+  }
+  .about svg {
+    margin: -1rem 0 -1rem 0;
+  }
+}
+
+.projek {
+  background-color: #e2edff;
+}
+.projek article {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.projek article .card {
+  background-color: #ffff;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+.projek article img {
+  width: 300px;
+  height: 200px;
+  border-radius: 1rem 1rem 0 0;
+}
+.projek article p {
+  width: 300px;
+  padding: 0.5rem;
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
+.kontak form {
+  margin: 1rem auto;
+  padding: 1rem 0;
+  width: 300px;
+}
+.kontak form .group {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem 0;
+  font-size: 1.2rem;
+}
+.kontak form .group label {
+  margin: 0 0 0.3rem 0;
+  font-size: 1.2rem;
+}
+.kontak form .group input[type=text] {
+  border: 0.1rem solid black;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+.kontak form .group textarea {
+  border: 0.1rem solid black;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  letter-spacing: -1px;
+  height: 5rem;
+}
+.kontak form .group input[type=submit] {
+  background-color: #0d6efd;
+  width: 100px;
+  border: 0.1rem solid rgb(70, 73, 116);
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  color: #ffff;
+  margin: 0 auto;
+}

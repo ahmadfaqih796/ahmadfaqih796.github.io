@@ -1,0 +1,361 @@
+nav {
+  display: flex;
+  background-color: #0d6efd;
+  justify-content: space-around;
+  color: rgb(255, 255, 255);
+  height: 50px;
+  align-items: center;
+  transition: all 0.5s;
+  /* faqih */
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 100vw;
+}
+footer h3 {
+  background-color: #0d6efd;
+  padding: 0 0 2rem 0;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #ffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+footer svg {
+  margin: 0 0 -0.5rem 0;
+}
+.sticky {
+  margin: 0;
+  width: 100vw;
+  background-color: #0d6efd;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+nav .logo {
+  font-family: 'Pacifico', cursive;
+  letter-spacing: 3px;
+  font-size: 1.2rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  width: 45%;
+  justify-content: space-between;
+}
+
+nav ul li a {
+  color :white;
+  text-decoration: none;
+  padding-top: 15px;
+  font-size: 1.3rem;
+  padding-bottom: 15px;
+  transition: all 0.5s;
+}
+
+nav ul li a:hover {
+  color :darkblue;
+}
+
+/* Sub Menu Dropdown*/
+nav ul li ul{
+  transition: all 0.2s;
+  font-size: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  position: absolute;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #ffff;
+}
+
+.svg-demo {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.text {
+  text-align: center;
+}
+
+.svg-demo:before {
+  display: inline-flex;
+  content: '';
+  background-image: url('https://tobiasahlin.com/images/typesource/leaves.svg');
+  background-size: 60px 40px;
+  height: 40px;
+  width: 60px;
+}
+.header{
+  width: 100%;
+  padding: 6rem 0 0 0;
+  margin: 0;
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: #e2edff;
+}
+.header img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 0.2rem solid #ddd;
+}
+.about {
+  margin: -1rem 0 0 0;
+}
+.about h2,
+.projek h2,
+.kontak h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0 0 1rem 0;
+  padding: 3rem 0 0 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.about .text {
+  display: flex;
+  width: 100%;
+  font-size: 1.2rem;
+  justify-content: center;
+}
+.about .text p {
+  width: 300px;
+  text-align: justify;
+  margin: 2rem;
+}
+.about svg,
+.projek svg,
+.kontak svg {
+  margin: -2rem 0 -1rem 0;
+}
+@media screen and (max-width: 550px) { 
+  .about .text{
+    flex-wrap: wrap;
+  }
+  .about .text p {
+    width: 90%;
+    margin: 0.5rem 0 0 0;
+  }
+  .about svg {
+    margin: -1rem 0 -1rem 0;
+  }
+}
+
+.projek {
+  background-color: #e2edff;
+}
+.projek article {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.projek article .card {
+  background-color: #ffff;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+.projek article img {
+  width: 300px;
+  height: 200px;
+  border-radius: 1rem 1rem 0 0;
+}
+.projek article p {
+  width: 300px;
+  padding: 0.5rem;
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
+.kontak form {
+  margin: 1rem auto;
+  padding: 1rem 0;
+  width: 300px;
+}
+.kontak form .group {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem 0;
+  font-size: 1.2rem;
+}
+.kontak form .group label {
+  margin: 0 0 0.3rem 0;
+  font-size: 1.2rem;
+}
+.kontak form .group input[type=text] {
+  border: 0.1rem solid black;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+.kontak form .group textarea {
+  border: 0.1rem solid black;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  letter-spacing: -1px;
+  height: 5rem;
+}
+.kontak form .group input[type=submit] {
+  background-color: #0d6efd;
+  width: 100px;
+  border: 0.1rem solid rgb(70, 73, 116);
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  color: #ffff;
+  margin: 0 auto;
+}
+.header svg {
+  margin: 0 0 -1rem 0;
+}
+.svg-demo:after {
+  display: inline-flex;
+  content: '';
+  background-image: url('https://tobiasahlin.com/images/typesource/leaves.svg');
+  background-size: 60px 40px;
+  height: 40px;
+  width: 60px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+nav ul li ul a {
+  color: black;
+}
+
+nav ul li:hover ul {
+  display: flex;
+  font-size: 100%;
+  position: absolute;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 15px;
+  margin-left: -20px;
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: brown;
+  z-index: 10;
+}
+
+nav ul li:hover ul li {
+  text-align: center;
+  background-color: yellow;
+  padding: 10px;
+  border: 3px solid black;
+  border-radius: 5px;
+  width: 180px;
+}
+
+
+
+/* menu toggle */
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu-toggle input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  opacity: 0;
+  left: -6px;
+  top: -3px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.5s ease;
+}
+
+.menu-toggle span:nth-child(2) {
+  /* background-color: red; */
+  transform-origin: 0 0;
+}
+.menu-toggle span:nth-child(4) {
+  /* background-color: red; */
+  transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+  background-color: darkblue;
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+.menu-toggle input:checked ~ span:nth-child(3) {
+  opacity: 0;
+  transform: scale(0);
+}
+.menu-toggle input:checked ~ span:nth-child(4) {
+  background-color: darkblue;
+  transform: rotate(-45deg) translate(-1px, -1px);
+}
+
+/* Ukuran tablet */
+@media screen and (max-width: 780px) {
+  nav ul {
+      width: 50%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  nav {
+      position: fixed;
+      width: 100vw;
+      z-index: 3;
+      margin: 0;
+      justify-content: space-between;
+      padding: 0 1rem 0 1rem;
+  }
+  .sticky {
+      position: fixed;
+      opacity: 1;
+      z-index: 1;
+  }
+  .menu-toggle {
+      display: flex;
+  }
+  nav ul {
+      position: absolute;
+      height: 100vh;
+      width: 50%;
+      background-color: #0d6efd;
+      background: linear-gradient(180deg, #0d6efd 15%, black 95%);
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      z-index: 1;
+      transform: translate(-100%);
+      transition: all 1s;
+      opacity: 0;
+  }
+  nav ul.slide {
+      position: absolute;
+      transform: translate(0);
+      z-index: -1;
+      opacity: 1;
+  }
+
+  nav ul li ul {
+      display: flex;
+  }
+}
