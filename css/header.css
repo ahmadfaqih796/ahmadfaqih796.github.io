@@ -1,0 +1,17 @@
+.header{
+  width: 100%;
+  padding: 6rem 0 0 0;
+  margin: 0;
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: #e2edff;
+}
+.header img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 0.2rem solid #ddd;
+}
+.header svg {
+  margin: 0 0 -1rem 0;
+}

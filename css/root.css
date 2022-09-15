@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+  background-color: #ffff;
+}
+
+.svg-demo {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.text {
+  text-align: center;
+}
+
+.svg-demo:before {
+  display: inline-flex;
+  content: '';
+  background-image: url('https://tobiasahlin.com/images/typesource/leaves.svg');
+  background-size: 60px 40px;
+  height: 40px;
+  width: 60px;
+}
+
+.svg-demo:after {
+  display: inline-flex;
+  content: '';
+  background-image: url('https://tobiasahlin.com/images/typesource/leaves.svg');
+  background-size: 60px 40px;
+  height: 40px;
+  width: 60px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
