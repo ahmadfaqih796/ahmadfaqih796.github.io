@@ -1,3 +1,11 @@
+:root {
+  --primary: #0d6efd;
+  --p-light: #6c9cff;
+  --p-dark: #0044c9;
+  --secondary: #e2edff;
+  --surface: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,8 +15,8 @@
 html {
   scroll-behavior: smooth;
 }
-body{
-  background-color: #ffff;
+body {
+  background-color: var(--surface);
 }
 
 .svg-demo {
@@ -23,8 +31,8 @@ body{
 
 .svg-demo:before {
   display: inline-flex;
-  content: '';
-  background-image: url('https://tobiasahlin.com/images/typesource/leaves.svg');
+  content: "";
+  background-image: url("https://tobiasahlin.com/images/typesource/leaves.svg");
   background-size: 60px 40px;
   height: 40px;
   width: 60px;
@@ -32,8 +40,8 @@ body{
 
 .svg-demo:after {
   display: inline-flex;
-  content: '';
-  background-image: url('https://tobiasahlin.com/images/typesource/leaves.svg');
+  content: "";
+  background-image: url("https://tobiasahlin.com/images/typesource/leaves.svg");
   background-size: 60px 40px;
   height: 40px;
   width: 60px;

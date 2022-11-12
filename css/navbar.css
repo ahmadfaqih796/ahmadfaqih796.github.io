@@ -1,12 +1,13 @@
 nav {
   display: flex;
-  background-color: #0d6efd;
+  background-color: var(--primary);
   justify-content: space-around;
   color: rgb(255, 255, 255);
   height: 50px;
   align-items: center;
   transition: all 0.5s;
   /* faqih */
+	height: 70px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -18,7 +19,7 @@ nav {
 .sticky {
   margin: 0;
   width: 100vw;
-  background-color: #0d6efd;
+  background-color: var(--primary);
   position: fixed;
   z-index: 1;
   top: 0;
@@ -48,56 +49,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color :darkblue;
+  color :var(--p-dark);
 }
 nav ul li a.selected {
   font-weight: 700;
-  text-decoration: underline;
-  color: #12b4d8;
+  color: var(--p-light);
 }
-
-/* Sub Menu Dropdown*/
-nav ul li ul{
-  transition: all 0.2s;
-  font-size: 0;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  position: absolute;
-}
-
-nav ul li ul a {
-  color: black;
-}
-
-nav ul li:hover ul {
-  display: flex;
-  font-size: 100%;
-  position: absolute;
-  justify-content: space-between;
-  flex-direction: column;
-  margin-top: 15px;
-  margin-left: -20px;
-  padding: 20px;
-  width: 200px;
-  height: 200px;
-  background-color: brown;
-  z-index: 10;
-}
-
-nav ul li:hover ul li {
-  text-align: center;
-  background-color: yellow;
-  padding: 10px;
-  border: 3px solid black;
-  border-radius: 5px;
-  width: 180px;
-}
-
-
 
 /* menu toggle */
-
 .menu-toggle {
   display: none;
   flex-direction: column;
@@ -119,32 +78,30 @@ nav ul li:hover ul li {
 
 .menu-toggle span {
   display: block;
-  width: 28px;
-  height: 3px;
+  width: 30px;
+  height: 4px;
   background-color: white;
   transition: all 0.5s ease;
 }
 
 .menu-toggle span:nth-child(2) {
-  /* background-color: red; */
   transform-origin: 0 0;
 }
 .menu-toggle span:nth-child(4) {
-  /* background-color: red; */
   transform-origin: 0 100%;
 }
 
 .menu-toggle input:checked ~ span:nth-child(2) {
-  background-color: darkblue;
-  transform: rotate(45deg) translate(-1px, -1px);
+  background-color: var(--surface);
+  transform: rotate(45deg) translate(-1px, -2.5px);
 }
 .menu-toggle input:checked ~ span:nth-child(3) {
   opacity: 0;
   transform: scale(0);
 }
 .menu-toggle input:checked ~ span:nth-child(4) {
-  background-color: darkblue;
-  transform: rotate(-45deg) translate(-1px, -1px);
+  background-color: var(--surface);
+  transform: rotate(-45deg) translate(-1px, 0px);
 }
 
 /* Ukuran tablet */
@@ -175,8 +132,8 @@ nav ul li:hover ul li {
       position: absolute;
       height: 100vh;
       width: 50%;
-      background-color: #0d6efd;
-      background: linear-gradient(180deg, #0d6efd 15%, black 95%);
+      background-color: var(--primary);
+      background: linear-gradient(180deg, var(--primary) 15%, black 95%);
       top: 0;
       left: 0;
       display: flex;

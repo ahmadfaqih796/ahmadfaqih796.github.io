@@ -4,7 +4,7 @@
   margin: 0;
   text-align: center;
   font-size: 1.5rem;
-  background-color: #e2edff;
+  background-color: var(--secondary);
 }
 .header img {
   display: block;

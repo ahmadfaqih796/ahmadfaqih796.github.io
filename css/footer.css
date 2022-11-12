@@ -1,5 +1,5 @@
 footer h3 {
-  background-color: #0d6efd;
+  background-color: var(--primary);
   padding: 0 0 2rem 0;
   font-size: 1.2rem;
   text-align: center;
