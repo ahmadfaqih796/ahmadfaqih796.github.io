@@ -1,4 +1,4 @@
-h1, h2, img, p, .card, form{
+h1, h2, img, p, a, .card, form{
   transform: scale(0);
   transition: all 1s;
 }
@@ -27,6 +27,18 @@ h1, h2, img, p, .card, form{
   width: 300px;
   text-align: justify;
   margin: 2rem;
+}
+.about a {
+	background-color: var(--primary);
+	margin: 0 auto;
+	display: block;
+	width: 120px;
+	text-align: center;
+	padding: 1rem 0;
+	text-decoration: none;
+	color: var(--surface);
+	font-weight: 700;
+	border-radius: 0.4rem;
 }
 .about svg,
 .projek svg,
@@ -99,7 +111,7 @@ h1, h2, img, p, .card, form{
   height: 5rem;
 }
 .kontak form .group input[type=submit] {
-  background-color: #0d6efd;
+  background-color: var(--primary);
   width: 100px;
   border: 0.1rem solid rgb(70, 73, 116);
   border-radius: 1rem;
