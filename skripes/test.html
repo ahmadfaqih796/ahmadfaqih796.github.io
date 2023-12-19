@@ -16,7 +16,7 @@
       .swiper {
         width: 100%;
         height: 500px;
-        background-color: rebeccapurple;
+        background-color: var(--go-green);
         /* padding: 0 50px; */
       }
       .swiper-slide {
@@ -24,6 +24,13 @@
         align-items: center;
         justify-content: center;
         font-size: 1.5em;
+      }
+      .swiper-button-next,
+      .swiper-button-prev {
+        color: var(--mint-cream);
+      }
+      .swiper-pagination-bullet-active {
+        background-color: var(--mint-cream);
       }
       .swiper-slide .card {
         display: flex;
@@ -35,10 +42,15 @@
         border-radius: 20px;
         /* height: 380px; */
       }
+      .swiper-slide .card h1 {
+        text-align: center;
+        line-height: 1.2;
+        margin: 0.3em 0 0.5em;
+      }
       .swiper-slide .card .card-img {
-        width: 100px;
-        height: 100px;
-        margin-top: -70px;
+        width: 130px;
+        height: 130px;
+        margin-top: -85px;
         border: 10px solid aliceblue;
         border-radius: 50%;
         object-fit: cover;
@@ -51,7 +63,6 @@
       @media screen and (max-width: 600px) {
         .swiper {
           height: 100vh;
-          background-color: rebeccapurple;
           /* padding: 0 50px; */
         }
         .swiper-slide {
@@ -74,7 +85,7 @@
         <div class="swiper-slide">
           <div class="card">
             <img class="card-img" src="https://picsum.photos/100" alt="" />
-            <h1>Ahmad Faqih Arifin</h1>
+            <h1>Apri</h1>
             <article>
               Pengalaman saya menggunakan layanan ini sangat positif. Mereka
               tidak hanya menyelesaikan tugas akhir saya tepat waktu, tetapi
@@ -86,7 +97,7 @@
         <div class="swiper-slide">
           <div class="card">
             <img class="card-img" src="https://picsum.photos/100" alt="" />
-            <h1>Ahmad Faqih Arifin</h1>
+            <h1>Aji</h1>
             <article>
               Pelayanan yang sangat profesional! Mereka tidak hanya memberikan
               solusi praktis untuk tugas akhir saya, tetapi juga memastikan
@@ -98,7 +109,7 @@
         <div class="swiper-slide">
           <div class="card">
             <img class="card-img" src="https://picsum.photos/100" alt="" />
-            <h1>Ahmad Faqih Arifin</h1>
+            <h1>Siti</h1>
             <article>
               Saya benar-benar terbantu oleh layanan joki skripsi ini! Tim
               mereka memberikan bimbingan yang luar biasa dan membantu saya

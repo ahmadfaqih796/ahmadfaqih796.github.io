@@ -15,6 +15,7 @@
     - custom css link
   -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/swiper.css" />
 
     <!-- 
     - google font link
@@ -29,6 +30,16 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+
+    <style>
+      .swiper-button-next,
+      .swiper-button-prev {
+        color: white;
+      }
+      .swiper-pagination-bullet-active {
+        background-color: var(--mint-cream);
+      }
+    </style>
 
     <!-- 
     - preload images
@@ -347,25 +358,74 @@
         </section>
 
         <!-- Slider main container -->
-        <div class="swiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            ...
+        <section class="section testimoni" aria-label="testimoni">
+          <h1 class="swiper-title">Testimoni</h1>
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="card">
+                  <img
+                    class="card-img"
+                    src="https://picsum.photos/100"
+                    alt=""
+                  />
+                  <h1>Apri</h1>
+                  <article>
+                    Pengalaman saya menggunakan layanan ini sangat positif.
+                    Mereka tidak hanya menyelesaikan tugas akhir saya tepat
+                    waktu, tetapi juga memberikan pandangan yang membantu saya
+                    memahami materi lebih baik
+                  </article>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <img
+                    class="card-img"
+                    src="https://picsum.photos/100"
+                    alt=""
+                  />
+                  <h1>Aji</h1>
+                  <article>
+                    Pelayanan yang sangat profesional! Mereka tidak hanya
+                    memberikan solusi praktis untuk tugas akhir saya, tetapi
+                    juga memastikan bahwa semua proses berjalan lancar. Saya
+                    sangat merekomendasikan mereka.
+                  </article>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <img
+                    class="card-img"
+                    src="https://picsum.photos/100"
+                    alt=""
+                  />
+                  <h1>Siti</h1>
+                  <article>
+                    Saya benar-benar terbantu oleh layanan joki skripsi ini! Tim
+                    mereka memberikan bimbingan yang luar biasa dan membantu
+                    saya mencapai hasil terbaik dalam tugas akhir saya. Terima
+                    kasih banyak!
+                  </article>
+                </div>
+              </div>
+              <!-- Add more slides as needed -->
+            </div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
           </div>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
-
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-
-          <!-- If we need scrollbar -->
-          <div class="swiper-scrollbar"></div>
-        </div>
+        </section>
 
         <!-- 
         - #FAQ
@@ -723,7 +783,10 @@
     - custom js link
   -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
+    <!-- Link to Swiper Scripts -->
+
     <script src="./assets/js/swiper.js"></script>
 
     <!-- 
