@@ -25,7 +25,10 @@
       href="https://fonts.googleapis.com/css2?family=Cuprum:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
     <!-- 
     - preload images
@@ -71,7 +74,6 @@
             <li>
               <a href="#features" class="navbar-link" data-nav-link>Features</a>
             </li>
-
           </ul>
         </nav>
 
@@ -79,7 +81,12 @@
           <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
         </button>
 
-        <a href="https://api.whatsapp.com/send?phone=6282182771538" target="_blank" class="btn-outline">Lets talk</a>
+        <a
+          href="https://api.whatsapp.com/send?phone=6282182771538"
+          target="_blank"
+          class="btn-outline"
+          >Lets talk</a
+        >
 
         <div class="overlay" data-nav-toggler data-overlay></div>
       </div>
@@ -150,7 +157,7 @@
             <div class="about-content">
               <h2 class="h2-sm section-title">Tentang Skripsi Sukses</h2>
 
-              <p class="section-text" style="text-align: justify;">
+              <p class="section-text" style="text-align: justify">
                 Memberikan solusi terpercaya bagi mahasiswa yang menghadapi
                 tantangan dalam menyelesaikan tugas akhir mereka. Dengan fokus
                 pada kualitas, kami telah membantu ribuan mahasiswa mencapai
@@ -261,8 +268,8 @@
 
                     <p class="card-text">
                       Mencakup penggunaan bahasa pemrograman PHP dan JavaScript,
-                      dengan penerapan framework Next.js atau CodeIgniter 4 untuk
-                      sisi klien dan Featherjs untuk sisi server.
+                      dengan penerapan framework Next.js atau CodeIgniter 4
+                      untuk sisi klien dan Featherjs untuk sisi server.
                     </p>
 
                     <!-- <a href="#" class="btn-link">
@@ -330,8 +337,8 @@
                   <h3 class="h3 card-title">Customer Strategy</h3>
 
                   <p class="card-text">
-                    Pendekatan berorientasi menjamin strategi
-                    yang dipersonalisasi untuk keberhasilan akademis Anda.
+                    Pendekatan berorientasi menjamin strategi yang
+                    dipersonalisasi untuk keberhasilan akademis Anda.
                   </p>
                 </div>
               </li>
@@ -339,14 +346,26 @@
           </div>
         </section>
 
-        <section>
-          <swiper-container>
-            <swiper-slide>Slide 1</swiper-slide>
-            <swiper-slide>Slide 2</swiper-slide>
-            <swiper-slide>Slide 3</swiper-slide>
-            <swiper-slide>Slide ...</swiper-slide>
-          </swiper-container>
-        </section>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
 
         <!-- 
         - #FAQ
@@ -633,7 +652,10 @@
             <li class="footer-item">
               <ion-icon name="call" aria-hidden="true"></ion-icon>
 
-              <a href="https://api.whatsapp.com/send?phone=6282182771538" target="_blank" class="contact-link"
+              <a
+                href="https://api.whatsapp.com/send?phone=6282182771538"
+                target="_blank"
+                class="contact-link"
                 >+6282182771538</a
               >
             </li>
@@ -694,13 +716,15 @@
             </li>
           </ul>
         </div>
-      </div>
-    </footer> -->
+      </div> -->
+    </footer>
 
     <!-- 
     - custom js link
   -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/swiper.js"></script>
 
     <!-- 
     - ionicon link
